@@ -1,0 +1,101 @@
+.column {
+    /* display: table; */
+    width: 50%;
+    padding: 20px;
+    height: 800px;  
+    margin:2px 5px 2px 5px;
+     /* border-right: 2px solid darkslategray;Should be removed. Only for demonstration */ */
+  }
+.row {
+    display: flex;
+    height:50%;
+    padding: 20px;
+    margin:2px 5px 2px 5px;
+}
+header {
+    background-color: grey;
+    width:1000px;
+    padding:50px;
+    margin-left:50px;
+    margin-right: 50px;
+}
+span.inline {
+    /* display: inline;
+    background-color:goldenrod;
+    width:900px;
+    height:100px;
+    margin-left:420px;
+    margin-right:400px;
+    padding: 25px;
+    border-radius: 65px;  */
+    display: inline-block;
+    background-color:goldenrod;
+    width:300px;
+    height:30px;
+    /* margin-left:310px;
+    margin-right:400px; */
+    margin:1px 400px 1px 310px;
+    padding: 30px;
+    border-radius: 45px;
+    text-align: center; 
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
+p.info {
+    text-align: center;
+    color: black;
+    font-family: 'Sansita Swashed', cursive;
+    
+}
+img.center {
+    display: block;
+    width:180px;
+    height:180px;
+    margin-left:400px;
+    margin-right:400px;
+    
+    border-radius: 50%;
+    border: 5px dotted goldenrod;
+
+}
+i.material-icons{
+        border-radius: 50%;
+        border: 5px dotted goldenrod;
+}
+div.profile,div.Skills,div.WorkExperience,div.Education {
+    font-family: 'Bree Serif', serif;
+    /* padding: 5px; */
+    margin-right:5px 20px 5px 20px;
+    
+    }
+strong {
+        font-size:x-large; 
+        font-weight:bolder;
+        color:darkslategrey;
+       }
+li,ul {
+    font-family: 'Crimson Text', serif;
+        font-weight:200;
+        font-size: large; 
+        color:black;
+        }
+ input[type="range"] {
+        background: linear-gradient(to right, goldenrod 0%,goldenrod 50%, #fff 100%);
+        border: solid 1px goldenrod;
+        border-radius: 8px;
+        height: 7px;
+        width: 150px;
+        outline: none;
+        transition: background 450ms ease-in;
+        cursor:default;
+        -webkit-appearance: none;
+ }
+ #column1 {
+     border-right: 2px solid lightslategray;
+     
+ }
+        
+
+    
