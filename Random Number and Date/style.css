@@ -1,0 +1,25 @@
+.container {
+    background-color: rgb(132, 191, 243);
+    width:100%;
+    font-size: larger;
+    margin:0 auto;
+    padding: 50px;
+}
+
+input {
+    background-color: blueviolet;
+    margin: 20px;
+    padding: 10px;
+}
+textarea {
+    background-color: beige;
+    margin-left: 100px;
+    display:inline;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color:goldenrod;
+    text-align: center;
+    
+}
