@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculator</title>
+    <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+var container = document.createElement('container')
+container.setAttribute('id', 'container')
+container.setAttribute('class','container-md container-sm')
+var calculator = document.createElement('div')
+calculator.setAttribute("id", 'calculator')
+var result = document.createElement('div')
+result.setAttribute('id', 'result')
+var previous = document.createElement('div')
+previous.setAttribute('id', 'previous')
+var current= document.createElement('p')
+current.setAttribute('id', 'previous_value')
+previous.append(current)
+var output = document.createElement('div')
+output.setAttribute('id', 'output')
+var output_value = document.createElement('p')
+output_value.setAttribute('id', 'output_value')
+output.append(output_value)
+result.append(previous, output)
+var keyboard = document.createElement('div')
+keyboard.setAttribute('id','keyboard')
+
+function creatingBtnElement(element, type,name,value,classname = "", id = "",) {
+    var ele = document.createElement(element)
+    
+    ele.setAttribute('type',type)
+    ele.setAttribute('name',name)
+    ele.setAttribute('value',value)
+    ele.setAttribute('class', classname)
+    ele.id = id;
+    // ele.innerText="name";
+   
+    
+    // ele.keypress= function () {
+    // return document.getElementById('output').innerHTML+=value;
+    //     // if(ele.value=="")
+    //     // {
+    //     //     ele.innerText="C"
+    //     // }
+    // }
+      return ele;
+}
+var clear = creatingBtnElement('input', 'button', 'clear',"C", 'operator', 'clear')
+
+var backspace = creatingBtnElement('input', 'button', 'backspace',"CE" ,'operator', 'backspace')
+var modulus = creatingBtnElement('input', 'button', 'modulus', '%', 'operator', '%')
+var divide = creatingBtnElement('input', 'button', 'divide', '/', 'operator', '/')
+var one = creatingBtnElement('input', 'button', 'one', '1', 'number', 'one')
+var two = creatingBtnElement('input', 'button', 'two', '2', 'number', 'two')
+var three = creatingBtnElement('input', 'button', 'three', '3', 'number', 'three')
+var subtract = creatingBtnElement('input', 'button', 'subtract', '-', 'operator', '-')
+var four = creatingBtnElement('input', 'button', 'four', '4', 'number', 'four')
+var five = creatingBtnElement('input', 'button', 'five', '5', 'number', 'five')
+var six = creatingBtnElement('input', 'button', 'six', '6', 'number', 'six')
+var multiply = creatingBtnElement('input', 'button', 'multiply', '*', 'operator', '*')
+var seven = creatingBtnElement('input', 'button', 'seven', '7', 'number', 'seven')
+var eight = creatingBtnElement('input', 'button', 'eight', '8', 'number', 'eight')
+var nine = creatingBtnElement('input', 'button', 'nine', '9', 'number', 'nine')
+var add = creatingBtnElement('input', 'button', 'add', '+', 'operator', '+')
+var zero = creatingBtnElement('input', 'button', 'zero', '0', 'number', 'zero')
+var equals= creatingBtnElement('input', 'button', 'equals', '=', 'operator', '=')
+var dot= creatingBtnElement('input', 'button', 'dot', '.', 'operator', 'dot')
+
+keyboard.append(clear,backspace,modulus,divide,one,two,three,subtract,four,five,six,multiply,seven,eight,nine,add,zero,dot,equals)
+calculator.append(result, keyboard)
+container.append(calculator)
+document.body.append(container)
+</script>
+<script src="script.js"></script>
+</body>
+</html>
